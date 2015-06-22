@@ -1,0 +1,2 @@
+[24-Apr-2015 17:27:40 UTC] PHP Warning:  require_once(/home4/emergenc/public_html/wp-content/themes/wp-radiance103/theme-styles.php): failed to open stream: No such file or directory in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/functions.php on line 37
+[24-Apr-2015 17:27:40 UTC] PHP Fatal error:  require_once(): Failed opening required '/home4/emergenc/public_html/wp-content/themes/wp-radiance103/theme-styles.php' (include_path='.:/opt/php55/lib/php') in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/functions.php on line 37

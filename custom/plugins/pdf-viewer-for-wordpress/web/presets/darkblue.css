@@ -1,0 +1,19 @@
+body{
+
+
+	background-color: #E9EAED;
+
+
+}
+
+
+#toolbarContainer, .findbar, .secondaryToolbar{
+
+
+	background-color: #425F9C;
+
+
+	background-image: url(images/texture.png);	
+
+
+}

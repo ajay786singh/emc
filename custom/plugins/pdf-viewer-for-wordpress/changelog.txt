@@ -1,0 +1,55 @@
+== 3.0 ==
+* New Shortcode to have Image Links
+* Tinymce button added to easily create shortcodes
+* Automatic Email Sending Issue Fix (It was happening for a few servers)
+* Fixed Visibility options in Responsive Mode
+* Fixed Social Share Hiding Issue
+* Fixed Saving Issue on Backend Settings Page
+* Added Page Links shortcode Parameter (link to a specific page of pdf file)
+* Added new shortcode parameter for default zoom
+* Added Automatic Iframe Option
+* Added a Page for Uploading PDF File & get link easily
+
+== 2.0 ==
+* Translatable into 100+ Languages
+* New Shortcode to keep the link short
+* Autolink Target Option
+* Custom Css Field for Viewer
+* Integrated Logo Uploader
+* Customize colors of Viewer
+
+
+== 1.3 == == 
+* Fixed Automatic Linking issue
+
+1.2 ==
+
+
+* Fixed Logo Formatting
+
+
+* More Clear & Nice Admin Interface
+
+
+* Replaced split function so its compatible with php 5.3+
+
+
+* Added More Screenshots
+
+
+
+== 1.1 ==
+
+
+* Fixed Compatibility Issue with Safari Browser
+
+
+* Fixed Social Media Icon aligning
+
+
+* Fixed Responsive Issues
+
+
+
+== 1.0 ==
+First Release
