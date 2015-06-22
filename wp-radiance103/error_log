@@ -1,0 +1,17 @@
+[15-Apr-2014 09:08:55] PHP Fatal error:  Call to undefined function  get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[13-Jul-2014 02:36:16] PHP Fatal error:  Call to undefined function  get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[10-Sep-2014 14:44:25] PHP Fatal error:  Call to undefined function  get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[30-Oct-2014 22:57:39] PHP Fatal error:  Call to undefined function  get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[31-Dec-2014 19:08:12] PHP Fatal error:  Call to undefined function  get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[12-Jan-2015 09:01:49 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[18-Feb-2015 18:24:40 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[12-Mar-2015 10:11:36 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/404.php on line 1
+[26-Mar-2015 13:37:37 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[13-Apr-2015 21:35:23 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[13-Apr-2015 21:35:24 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[13-Apr-2015 21:35:34 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[13-Apr-2015 21:35:34 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[25-Apr-2015 03:28:49 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[13-May-2015 04:27:28 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[26-May-2015 11:06:35 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
+[20-Jun-2015 12:50:43 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home4/emergenc/public_html/wp-content/themes/wp-radiance103/index.php on line 1
