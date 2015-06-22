@@ -7,7 +7,9 @@ Template Name: Blog (Home Page)
 <?php get_header(); ?>
 
 <?php get_template_part( 'content', 'before' ); ?>
-<div id="slidehp"><?php do_action('slideshow_deploy', '3692'); ?></div>	
+<!--
+<div id="slidehp"><?php //do_action('slideshow_deploy', '3692'); ?></div>	
+-->
 <?php get_template_part( 'index4' ); ?>
 
 
