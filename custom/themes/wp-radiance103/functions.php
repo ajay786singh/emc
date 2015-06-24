@@ -380,8 +380,8 @@ function my_replace_image_urls() {
 
 function my_wp_get_attachment_url( $url, $post_id) {
     if ( $file = get_post_meta( $post_id, '_wp_attached_file', true) ) {
-        if ( ($uploads = wp_upload_dir()) && false === $uploads['error'] ) {
-            if ( file_exists('wp-content/uploads/' .'/'. $file ) ) {
+        if ( ($uploads = 'wp-content/uploads') && false === $uploads['error'] ) {
+            if ( file_exists( $uploads['basedir'] .'/'. $file ) ) {
                 return $url;
             }
         }
