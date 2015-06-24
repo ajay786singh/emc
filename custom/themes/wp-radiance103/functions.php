@@ -368,4 +368,25 @@ function test_pdf_viewer($atts){
 }
 add_shortcode('test_pdf_viewer', 'test_pdf_viewer');
 
+// REPLACE SITE UPLOAD URLS - HYPENOTIC
+add_action('init', 'my_replace_image_urls' );
+function my_replace_image_urls() {
+    if ( defined('WP_SITEURL') && defined('LIVE_SITEURL') ) {
+        if ( WP_SITEURL != LIVE_SITEURL ){
+            add_filter('wp_get_attachment_url', 'my_wp_get_attachment_url', 10, 2 );
+        }
+    }
+}
+
+function my_wp_get_attachment_url( $url, $post_id) {
+    if ( $file = get_post_meta( $post_id, '_wp_attached_file', true) ) {
+        if ( ($uploads = wp_upload_dir()) && false === $uploads['error'] ) {
+            if ( file_exists( $uploads['basedir'] .'/'. $file ) ) {
+                return $url;
+            }
+        }
+    }
+    return str_replace( WP_SITEURL, LIVE_SITEURL, $url );
+}
+
 ?>
