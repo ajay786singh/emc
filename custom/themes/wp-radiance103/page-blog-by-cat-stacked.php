@@ -26,8 +26,10 @@ Template Name: Blog (Home Page)
 ?>
 
 	<article style="clear: both; padding-bottom: 5em;">
-	
-		<img style ="float: left; padding-right: 2em;" src="<?php echo $url; ?>">
+		<!--
+		<img style ="float: left; padding-right: 2em;" src="<?php //echo $url; ?>">
+		-->
+		<img style ="float: left; padding-right: 2em;" src="http://placehold.it/150x150">
 		<h2 class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 		<?php echo wp_trim_words( get_the_content(), 40, '<a href="'. get_permalink() .'"> ... Read More</a>' );?>
 	</article>
