@@ -182,5 +182,18 @@ iframe[id^='twitter-widget-']{
 		display: none;
   	}
 }
+
+
+.blog-home {
+	clear: both; 
+	padding: 2.5em 0 2.5em 0;
+}
+
+.blog-home img {
+	float: left; 
+	padding-right: 2em;
+}
+
+
 </style>
 }

@@ -39,8 +39,8 @@ Template Name: Blog (Home Page)
 	$url = $thumb['0'];
 ?>
 
-	<article style="clear: both; padding: 2.5em 0 2.5em 0;">
-		<img style ="float: left; padding-right: 2em;" src="<?php echo $url; ?>">
+	<article class="blog-home">
+		<img src="<?php echo $url; ?>">
 		<h2 class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 		<?php echo wp_trim_words( get_the_content(), 40, '<a href="'. get_permalink() .'"> ... Read More</a>' );?>
 	</article>
