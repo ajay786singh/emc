@@ -9,6 +9,20 @@ Template Name: Blog (Home Page)
 <!-- Sidebar -->
 <?php get_template_part( 'content', 'before' ); ?>
 
+<!-- Put search at top for mobile -->
+<div class="search-mobile">
+	<div class="widget-wrap">
+		<h3 class="widgettitle"><span>Search EM Cases</span></h3>			
+	</div>
+	<div class="widget-wrap">			
+		<div id="search-2" class="widget widget_search">
+			<form id="searchform" method="get" action="http://emergencymedicinecases.com/">
+				<input type="text" placeholder="Enter Keywords" size="18" maxlength="50" name="s" id="searchfield">
+			</form>
+		</div>
+	</div>
+</div>
+
 <!-- Get 8 most recent posts regardless of category, done by Hypenotic -->
 <?php //Set params
 	$args = array(
@@ -25,11 +39,8 @@ Template Name: Blog (Home Page)
 	$url = $thumb['0'];
 ?>
 
-	<article style="clear: both; padding-bottom: 5em;">
-		<!--
-		<img style ="float: left; padding-right: 2em;" src="<?php //echo $url; ?>">
-		-->
-		<img style ="float: left; padding-right: 2em;" src="http://placehold.it/150x150">
+	<article style="clear: both; padding: 2.5em 0 2.5em 0;">
+		<img style ="float: left; padding-right: 2em;" src="<?php echo $url; ?>">
 		<h2 class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 		<?php echo wp_trim_words( get_the_content(), 40, '<a href="'. get_permalink() .'"> ... Read More</a>' );?>
 	</article>

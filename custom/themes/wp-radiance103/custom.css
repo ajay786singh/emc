@@ -175,3 +175,12 @@ margin: auto;
 iframe[id^='twitter-widget-']{
 	width:100% !important;
 }
+
+
+@media (min-width: 770px) {
+	.search-mobile {
+		display: none;
+  	}
+}
+</style>
+}
