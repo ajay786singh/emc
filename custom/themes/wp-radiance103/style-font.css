@@ -6,7 +6,7 @@ h1,h2,h3,h4,h5,h6,h7,
 	}
 
 h1 { font-size: 30px; letter-spacing:-1px; }
-h2,#sitetitle .title { font-size: 18px; letter-spacing:-1px; }
+h2,#sitetitle .title { font-size: 18px; letter-spacing:-1px; line-height: 30px; }
 h3 { font-size: 26px; letter-spacing:-1px; line-height:1.3em; color:#000; }
 h4,h5,h6,h7 { font-size: 20px; letter-spacing:-1px; line-height:1.3em; }
 
@@ -18,7 +18,8 @@ h1.archive-title {
 	}
 
 h2.post-title {
-	font-size: 26px;
+	font-size: 24px;
+	padding-bottom: 5px;
 	}
 
 h2.feature-title, h3.widgettitle, h2.feat-title, .page-head h5  {

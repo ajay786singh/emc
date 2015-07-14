@@ -26,7 +26,10 @@ Template Name: Blog (Home Page)
 <!-- Get 8 most recent posts regardless of category, done by Hypenotic -->
 <?php //Set params
 	$args = array(
-		'posts_per_page' => 8
+		'posts_per_page' => 8,
+		'paged' => $paged
+
+		
 	);
 	$loop = new WP_Query($args); 
 ?>
@@ -52,20 +55,24 @@ Template Name: Blog (Home Page)
  	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 
  	<!-- REALLY stop The Loop. -->
- 	
+ 
 <?php endif; ?>
 
+<?php get_template_part( 'bot-nav' ); ?>
 
-<!-- BELOW COMMENTED OUT BY HYPENOTIC -->
+
+
+<!-- BELOW COMMENTED OUT BY HYPENOTIC 
+
 <?php //get_template_part( 'index4' ); ?>
 
 	<?php the_post(); $content = get_the_content(); ?>
-	<?php if ( ! empty( $content ) ) : ?>
+	<?php //if ( ! empty( $content ) ) : ?>
 		<div class="content">
             <?php //the_content(); ?>
 		</div>
-	<?php endif; ?>
-
+	<?php //endif; ?>
+-->
 
 <!-- Sidebar -->
 <?php get_template_part( 'content', 'after' ); ?>

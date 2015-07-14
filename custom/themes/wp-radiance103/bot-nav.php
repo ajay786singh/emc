@@ -1,5 +1,5 @@
 <div class="navigation clearfix">
-<?php if ( is_single() ) { ?>
+<?php if ( is_single() || is_front_page()) { ?>
 	<div class="alignleft">
 		<?php previous_post_link('&laquo; %link'); ?>
 	</div>
