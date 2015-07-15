@@ -30,10 +30,12 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                                         
 					<div class="entry">
 
-						<h1 class="page-title"><?php the_title(); ?></h1>
-                        
+						<h1 class="page-title"><?php the_title(); ?>
+						<br>
+						
+						</h1>
                         <a href="<?php the_permalink() ?>" rel="nofollow" title="<?php _e("Permanent Link to", "solostream"); ?> <?php the_title(); ?>"><?php solostream_large_thumbnail(); ?></a>
-                        
+                        <b><?php the_date();?></b>
 						<?php solostream_excerpt(); ?>
 
 						<div style="clear:both;"></div>
