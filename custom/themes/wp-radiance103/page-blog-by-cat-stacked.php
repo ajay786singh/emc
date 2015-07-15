@@ -25,17 +25,17 @@ Template Name: Blog (Home Page)
 
 <!-- Get 8 most recent posts regardless of category, done by Hypenotic -->
 <?php //Set params
+	//wp_reset_query();
+	$paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
 	$args = array(
 		'posts_per_page' => 8,
-		'paged' => $paged
-
-		
+		'paged' => $paged		
 	);
-	$loop = new WP_Query($args); 
+	query_posts($args); 
 ?>
 
 <?php // Start loop
-	if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+	if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <?php // Get Post image and set to variable
 	$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );
@@ -48,7 +48,12 @@ Template Name: Blog (Home Page)
 		<?php echo wp_trim_words( get_the_content(), 40, '<a href="'. get_permalink() .'"> ... Read More</a>' );?>
 	</article>
 
-<?php endwhile; else : ?>
+<?php endwhile;
+//wp_reset_postdata();
+?>
+<?php get_template_part( 'bot-nav' );?>
+
+ <?php else : ?>
 
  	<!-- The very first "if" tested to see if there were any Posts to -->
  	<!-- display.  This "else" part tells what do if there weren't any. -->
@@ -57,9 +62,6 @@ Template Name: Blog (Home Page)
  	<!-- REALLY stop The Loop. -->
  
 <?php endif; ?>
-
-<?php get_template_part( 'bot-nav' ); ?>
-
 
 
 <!-- BELOW COMMENTED OUT BY HYPENOTIC 

@@ -1,7 +1,6 @@
 <?php
 
 ob_start();
-
 if( $_SERVER[ "REQUEST_URI" ] == '/?feed=podcast' )
 {
 	header( 'Location: http://emergencymedicinecases.com/feed/', TRUE, 301 );
