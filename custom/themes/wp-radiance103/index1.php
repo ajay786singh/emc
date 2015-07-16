@@ -39,7 +39,14 @@ $do_not_duplicate[] = $post->ID; ?>
 						<?php get_template_part( 'postinfo' ); ?>
 
 						<a href="<?php the_permalink() ?>" rel="nofollow" title="<?php _e("Permanent Link to", "solostream"); ?> <?php the_title(); ?>"><?php solostream_large_thumbnail(); ?></a>
-
+						<?php 
+							if(is_category()){
+								$cur_cat_id = get_cat_id( single_cat_title("",false) );
+								if($cur_cat_id=='605'){
+									echo "<b>".get_the_date()."</b>";
+								}
+							}
+						?>
 						<?php solostream_excerpt(); ?>
 
 						<div style="clear:both;"></div>
