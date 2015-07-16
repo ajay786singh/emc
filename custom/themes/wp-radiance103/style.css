@@ -473,7 +473,8 @@ blockquote {
 
 /*download box styles in filebase*/
 
-#dlbox { background-color:#ececec;
+#dlbox {
+ background-color:#ececec;
 
 	padding:5px;
 
@@ -483,7 +484,9 @@ blockquote {
 
 	border: 1px solid #CCC;
 
-	 width:95%; height:80px; margin: 20px 0; display:block;}
+	 width:95%; height:80px; margin: 20px 0; display:block;
+	 
+	 }
 
 
 

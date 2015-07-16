@@ -12,7 +12,7 @@ $feed_synch	= array( 'feed-rss.php' );
 foreach( $feed_synch as $feed_filename )
 {
 	$feed1_path	= dirname( __FILE__ ) . '/' . $feed_filename;
-	$feed2_path	= dirname( __FILE__ ) . '/../../../wordpress/wp-includes/' . $feed_filename;
+	$feed2_path	= dirname( __FILE__ ) . '/../../../wp-includes/' . $feed_filename;
 
 	if( file_get_contents( $feed1_path ) != file_get_contents( $feed2_path ) )
 	{
