@@ -1,7 +1,11 @@
 /* ---------[ Responsive Design ]--------- */
 
 @media only screen and (max-width:560px) {
-
+	
+#dlbox {
+	overflow:hidden;
+	height:auto;
+}
 	#outer-wrap {
 		width:100% !important;
 		padding:0 !important;
