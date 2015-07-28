@@ -47,7 +47,7 @@ $do_not_duplicate[] = $post->ID; ?>
 								}
 							}
 						?>
-						<?php solostream_excerpt(); ?>
+						<?php solostream_excerpt();  ?>
 
 						<div style="clear:both;"></div>
 

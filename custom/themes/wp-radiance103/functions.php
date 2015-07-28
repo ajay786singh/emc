@@ -305,14 +305,16 @@ add_filter('pre_get_posts', 'exclude_category');
 /*-----------------------------------------------------------------------------------*/
 function solostream_excerpt() {
 	if ( get_option('solostream_post_content') == 'Excerpts' ) { ?>
-		<?php the_excerpt(); ?>
+		<?php 
+			$content=get_the_excerpt();
+			$content = preg_replace( '|\[(.+?)\](.+?\[/\\1\])?|s', '', $content);
+			echo $content;
+		?>
 		<p class="readmore"><a class="more-link" href="<?php the_permalink() ?>" rel="nofollow" title="<?php _e("Permanent Link to", "solostream"); ?> <?php the_title(); ?>"><?php _e("Learn More &raquo;", "solostream"); ?></a></p>
 	<?php } else { 
 		the_content(__("Continue Reading &raquo;", "solostream")); 
 	}
 }
-
-
 
 add_action('after_setup_theme', 'remove_admin_bar');
 function remove_admin_bar() {
@@ -366,5 +368,4 @@ function test_pdf_viewer($atts){
     return 'Test ShortCode';
 }
 add_shortcode('test_pdf_viewer', 'test_pdf_viewer');
-
 ?>
